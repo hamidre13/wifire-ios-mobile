@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A77884188DDB960071D680 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A77883188DDB960071D680 /* MapKit.framework */; };
 		031ECCD4188DD24A0016398F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECCD3188DD24A0016398F /* Foundation.framework */; };
 		031ECCD6188DD24A0016398F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECCD5188DD24A0016398F /* CoreGraphics.framework */; };
 		031ECCD8188DD24A0016398F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECCD7188DD24A0016398F /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01A77883188DDB960071D680 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		031ECCD0188DD24A0016398F /* wifire-officail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wifire-officail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		031ECCD3188DD24A0016398F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		031ECCD5188DD24A0016398F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A77884188DDB960071D680 /* MapKit.framework in Frameworks */,
 				031ECCD6188DD24A0016398F /* CoreGraphics.framework in Frameworks */,
 				031ECCD8188DD24A0016398F /* UIKit.framework in Frameworks */,
 				031ECCD4188DD24A0016398F /* Foundation.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		031ECCD2188DD24A0016398F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01A77883188DDB960071D680 /* MapKit.framework */,
 				031ECCD3188DD24A0016398F /* Foundation.framework */,
 				031ECCD5188DD24A0016398F /* CoreGraphics.framework */,
 				031ECCD7188DD24A0016398F /* UIKit.framework */,
@@ -474,6 +478,7 @@
 				031ECD07188DD24A0016398F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		031ECD08188DD24A0016398F /* Build configuration list for PBXNativeTarget "wifire-officailTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +487,7 @@
 				031ECD0A188DD24A0016398F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
