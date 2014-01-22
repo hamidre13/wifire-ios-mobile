@@ -166,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="-395" y="3212"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--Mapview - Item 2-->
         <scene sceneID="st2-6o-Gqc">
             <objects>
-                <viewController id="jUE-Kt-aid" sceneMemberID="viewController">
+                <viewController id="jUE-Kt-aid" customClass="mapview" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="66p-BS-UOz"/>
                         <viewControllerLayoutGuide type="bottom" id="0Uv-Q1-c7F"/>
@@ -178,17 +178,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="629" translatesAutoresizingMaskIntoConstraints="NO" id="5Wq-KD-AFj">
-                                <rect key="frame" x="41" y="48" width="629" height="252"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="358" translatesAutoresizingMaskIntoConstraints="NO" id="5Wq-KD-AFj">
+                                <rect key="frame" x="41" y="48" width="358" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">This is a map view place holder and by tapping on the map your will get more info, we try to support Google maps, Ios native map and ucsd 3d maps</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bx7-Nk-SUh">
-                                <rect key="frame" x="41" y="308" width="456" height="284"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

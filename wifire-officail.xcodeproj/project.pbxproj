@@ -23,6 +23,20 @@
 		031ECCF8188DD24A0016398F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECCD7188DD24A0016398F /* UIKit.framework */; };
 		031ECD00188DD24A0016398F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 031ECCFE188DD24A0016398F /* InfoPlist.strings */; };
 		031ECD02188DD24A0016398F /* wifire_officailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 031ECD01188DD24A0016398F /* wifire_officailTests.m */; };
+		031ECD0C189042C50016398F /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD0B189042C50016398F /* GoogleMaps.framework */; };
+		031ECD0E189043AB0016398F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD0D189043AB0016398F /* AVFoundation.framework */; };
+		031ECD10189043B70016398F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD0F189043B70016398F /* CoreData.framework */; };
+		031ECD12189043C50016398F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD11189043C50016398F /* CoreLocation.framework */; };
+		031ECD14189043D30016398F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD13189043D30016398F /* CoreText.framework */; };
+		031ECD16189043DE0016398F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD15189043DE0016398F /* GLKit.framework */; };
+		031ECD18189043E90016398F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD17189043E90016398F /* ImageIO.framework */; };
+		031ECD1A189043FE0016398F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD19189043FE0016398F /* libc++.dylib */; };
+		031ECD1C1890440B0016398F /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD1B1890440B0016398F /* libicucore.dylib */; };
+		031ECD1E189044150016398F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD1D189044150016398F /* libz.dylib */; };
+		031ECD201890441F0016398F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD1F1890441F0016398F /* OpenGLES.framework */; };
+		031ECD22189044280016398F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD21189044280016398F /* QuartzCore.framework */; };
+		031ECD24189044310016398F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD23189044310016398F /* SystemConfiguration.framework */; };
+		031ECD27189046EE0016398F /* mapview.m in Sources */ = {isa = PBXBuildFile; fileRef = 031ECD26189046EE0016398F /* mapview.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +71,21 @@
 		031ECCFD188DD24A0016398F /* wifire-officailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wifire-officailTests-Info.plist"; sourceTree = "<group>"; };
 		031ECCFF188DD24A0016398F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		031ECD01188DD24A0016398F /* wifire_officailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wifire_officailTests.m; sourceTree = "<group>"; };
+		031ECD0B189042C50016398F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		031ECD0D189043AB0016398F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		031ECD0F189043B70016398F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		031ECD11189043C50016398F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		031ECD13189043D30016398F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		031ECD15189043DE0016398F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		031ECD17189043E90016398F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		031ECD19189043FE0016398F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		031ECD1B1890440B0016398F /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		031ECD1D189044150016398F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		031ECD1F1890441F0016398F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		031ECD21189044280016398F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		031ECD23189044310016398F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		031ECD25189046EE0016398F /* mapview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapview.h; sourceTree = "<group>"; };
+		031ECD26189046EE0016398F /* mapview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapview.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +93,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031ECD24189044310016398F /* SystemConfiguration.framework in Frameworks */,
+				031ECD22189044280016398F /* QuartzCore.framework in Frameworks */,
+				031ECD201890441F0016398F /* OpenGLES.framework in Frameworks */,
+				031ECD1E189044150016398F /* libz.dylib in Frameworks */,
+				031ECD1C1890440B0016398F /* libicucore.dylib in Frameworks */,
+				031ECD1A189043FE0016398F /* libc++.dylib in Frameworks */,
+				031ECD18189043E90016398F /* ImageIO.framework in Frameworks */,
+				031ECD16189043DE0016398F /* GLKit.framework in Frameworks */,
+				031ECD14189043D30016398F /* CoreText.framework in Frameworks */,
+				031ECD12189043C50016398F /* CoreLocation.framework in Frameworks */,
+				031ECD10189043B70016398F /* CoreData.framework in Frameworks */,
+				031ECD0E189043AB0016398F /* AVFoundation.framework in Frameworks */,
 				01A77884188DDB960071D680 /* MapKit.framework in Frameworks */,
 				031ECCD6188DD24A0016398F /* CoreGraphics.framework in Frameworks */,
 				031ECCD8188DD24A0016398F /* UIKit.framework in Frameworks */,
+				031ECD0C189042C50016398F /* GoogleMaps.framework in Frameworks */,
 				031ECCD4188DD24A0016398F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +148,19 @@
 		031ECCD2188DD24A0016398F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				031ECD23189044310016398F /* SystemConfiguration.framework */,
+				031ECD21189044280016398F /* QuartzCore.framework */,
+				031ECD1F1890441F0016398F /* OpenGLES.framework */,
+				031ECD1D189044150016398F /* libz.dylib */,
+				031ECD1B1890440B0016398F /* libicucore.dylib */,
+				031ECD19189043FE0016398F /* libc++.dylib */,
+				031ECD17189043E90016398F /* ImageIO.framework */,
+				031ECD15189043DE0016398F /* GLKit.framework */,
+				031ECD13189043D30016398F /* CoreText.framework */,
+				031ECD11189043C50016398F /* CoreLocation.framework */,
+				031ECD0F189043B70016398F /* CoreData.framework */,
+				031ECD0D189043AB0016398F /* AVFoundation.framework */,
+				031ECD0B189042C50016398F /* GoogleMaps.framework */,
 				01A77883188DDB960071D680 /* MapKit.framework */,
 				031ECCD3188DD24A0016398F /* Foundation.framework */,
 				031ECCD5188DD24A0016398F /* CoreGraphics.framework */,
@@ -126,6 +181,8 @@
 				031ECCEC188DD24A0016398F /* ViewController.m */,
 				031ECCEE188DD24A0016398F /* Images.xcassets */,
 				031ECCDA188DD24A0016398F /* Supporting Files */,
+				031ECD25189046EE0016398F /* mapview.h */,
+				031ECD26189046EE0016398F /* mapview.m */,
 			);
 			path = "wifire-officail";
 			sourceTree = "<group>";
@@ -258,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				031ECCED188DD24A0016398F /* ViewController.m in Sources */,
+				031ECD27189046EE0016398F /* mapview.m in Sources */,
 				031ECCE4188DD24A0016398F /* AppDelegate.m in Sources */,
 				031ECCE0188DD24A0016398F /* main.m in Sources */,
 			);
@@ -396,9 +454,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/hamid/Desktop/wifire-officail",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wifire-officail/wifire-officail-Prefix.pch";
 				INFOPLIST_FILE = "wifire-officail/wifire-officail-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,9 +472,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/hamid/Desktop/wifire-officail",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wifire-officail/wifire-officail-Prefix.pch";
 				INFOPLIST_FILE = "wifire-officail/wifire-officail-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
