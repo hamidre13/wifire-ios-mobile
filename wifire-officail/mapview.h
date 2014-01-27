@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlipSideViewController.h"
 
-@interface mapview : UIViewController
-
+@interface mapview : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate,UIPopoverControllerDelegate,FlipSideViewControllerDelegate>
+@property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 @end

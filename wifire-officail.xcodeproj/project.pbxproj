@@ -23,7 +23,6 @@
 		031ECCF8188DD24A0016398F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECCD7188DD24A0016398F /* UIKit.framework */; };
 		031ECD00188DD24A0016398F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 031ECCFE188DD24A0016398F /* InfoPlist.strings */; };
 		031ECD02188DD24A0016398F /* wifire_officailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 031ECD01188DD24A0016398F /* wifire_officailTests.m */; };
-		031ECD0C189042C50016398F /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD0B189042C50016398F /* GoogleMaps.framework */; };
 		031ECD0E189043AB0016398F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD0D189043AB0016398F /* AVFoundation.framework */; };
 		031ECD10189043B70016398F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD0F189043B70016398F /* CoreData.framework */; };
 		031ECD12189043C50016398F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD11189043C50016398F /* CoreLocation.framework */; };
@@ -37,6 +36,11 @@
 		031ECD22189044280016398F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD21189044280016398F /* QuartzCore.framework */; };
 		031ECD24189044310016398F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECD23189044310016398F /* SystemConfiguration.framework */; };
 		031ECD27189046EE0016398F /* mapview.m in Sources */ = {isa = PBXBuildFile; fileRef = 031ECD26189046EE0016398F /* mapview.m */; };
+		031ECE33189052070016398F /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECE32189052070016398F /* GoogleMaps.framework */; };
+		031ECE35189052900016398F /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031ECE34189052900016398F /* GoogleMaps.framework */; };
+		031ECE36189052C30016398F /* GoogleMaps.framework in Resources */ = {isa = PBXBuildFile; fileRef = 031ECE32189052070016398F /* GoogleMaps.framework */; };
+		031ECE381890534E0016398F /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 031ECE371890534E0016398F /* GoogleMaps.bundle */; };
+		03802671189089D6004B9901 /* FlipSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03802670189089D6004B9901 /* FlipSideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +75,6 @@
 		031ECCFD188DD24A0016398F /* wifire-officailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wifire-officailTests-Info.plist"; sourceTree = "<group>"; };
 		031ECCFF188DD24A0016398F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		031ECD01188DD24A0016398F /* wifire_officailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wifire_officailTests.m; sourceTree = "<group>"; };
-		031ECD0B189042C50016398F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		031ECD0D189043AB0016398F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		031ECD0F189043B70016398F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		031ECD11189043C50016398F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -86,6 +89,11 @@
 		031ECD23189044310016398F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		031ECD25189046EE0016398F /* mapview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapview.h; sourceTree = "<group>"; };
 		031ECD26189046EE0016398F /* mapview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapview.m; sourceTree = "<group>"; };
+		031ECE32189052070016398F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		031ECE34189052900016398F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		031ECE371890534E0016398F /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		0380266F189089D6004B9901 /* FlipSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipSideViewController.h; sourceTree = "<group>"; };
+		03802670189089D6004B9901 /* FlipSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipSideViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 				031ECD1E189044150016398F /* libz.dylib in Frameworks */,
 				031ECD1C1890440B0016398F /* libicucore.dylib in Frameworks */,
 				031ECD1A189043FE0016398F /* libc++.dylib in Frameworks */,
+				031ECE35189052900016398F /* GoogleMaps.framework in Frameworks */,
 				031ECD18189043E90016398F /* ImageIO.framework in Frameworks */,
 				031ECD16189043DE0016398F /* GLKit.framework in Frameworks */,
 				031ECD14189043D30016398F /* CoreText.framework in Frameworks */,
@@ -107,8 +116,8 @@
 				031ECD0E189043AB0016398F /* AVFoundation.framework in Frameworks */,
 				01A77884188DDB960071D680 /* MapKit.framework in Frameworks */,
 				031ECCD6188DD24A0016398F /* CoreGraphics.framework in Frameworks */,
+				031ECE33189052070016398F /* GoogleMaps.framework in Frameworks */,
 				031ECCD8188DD24A0016398F /* UIKit.framework in Frameworks */,
-				031ECD0C189042C50016398F /* GoogleMaps.framework in Frameworks */,
 				031ECCD4188DD24A0016398F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +138,7 @@
 		031ECCC7188DD24A0016398F = {
 			isa = PBXGroup;
 			children = (
+				031ECE371890534E0016398F /* GoogleMaps.bundle */,
 				031ECCD9188DD24A0016398F /* wifire-officail */,
 				031ECCFB188DD24A0016398F /* wifire-officailTests */,
 				031ECCD2188DD24A0016398F /* Frameworks */,
@@ -148,6 +158,8 @@
 		031ECCD2188DD24A0016398F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				031ECE32189052070016398F /* GoogleMaps.framework */,
+				031ECE34189052900016398F /* GoogleMaps.framework */,
 				031ECD23189044310016398F /* SystemConfiguration.framework */,
 				031ECD21189044280016398F /* QuartzCore.framework */,
 				031ECD1F1890441F0016398F /* OpenGLES.framework */,
@@ -160,7 +172,6 @@
 				031ECD11189043C50016398F /* CoreLocation.framework */,
 				031ECD0F189043B70016398F /* CoreData.framework */,
 				031ECD0D189043AB0016398F /* AVFoundation.framework */,
-				031ECD0B189042C50016398F /* GoogleMaps.framework */,
 				01A77883188DDB960071D680 /* MapKit.framework */,
 				031ECCD3188DD24A0016398F /* Foundation.framework */,
 				031ECCD5188DD24A0016398F /* CoreGraphics.framework */,
@@ -177,6 +188,8 @@
 				031ECCE3188DD24A0016398F /* AppDelegate.m */,
 				031ECCE5188DD24A0016398F /* Main_iPhone.storyboard */,
 				031ECCE8188DD24A0016398F /* Main_iPad.storyboard */,
+				0380266F189089D6004B9901 /* FlipSideViewController.h */,
+				03802670189089D6004B9901 /* FlipSideViewController.m */,
 				031ECCEB188DD24A0016398F /* ViewController.h */,
 				031ECCEC188DD24A0016398F /* ViewController.m */,
 				031ECCEE188DD24A0016398F /* Images.xcassets */,
@@ -275,6 +288,39 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				ca,
+				cs,
+				da,
+				de,
+				el,
+				en_GB,
+				es,
+				fi,
+				fr,
+				he,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				nl,
+				no,
+				pl,
+				pt,
+				pt_PT,
+				ro,
+				ru,
+				sk,
+				sv,
+				th,
+				tr,
+				uk,
+				vi,
+				zh_CN,
+				zh_TW,
 			);
 			mainGroup = 031ECCC7188DD24A0016398F;
 			productRefGroup = 031ECCD1188DD24A0016398F /* Products */;
@@ -292,6 +338,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031ECE381890534E0016398F /* GoogleMaps.bundle in Resources */,
+				031ECE36189052C30016398F /* GoogleMaps.framework in Resources */,
 				031ECCEA188DD24A0016398F /* Main_iPad.storyboard in Resources */,
 				031ECCEF188DD24A0016398F /* Images.xcassets in Resources */,
 				031ECCE7188DD24A0016398F /* Main_iPhone.storyboard in Resources */,
@@ -317,6 +365,7 @@
 				031ECCED188DD24A0016398F /* ViewController.m in Sources */,
 				031ECD27189046EE0016398F /* mapview.m in Sources */,
 				031ECCE4188DD24A0016398F /* AppDelegate.m in Sources */,
+				03802671189089D6004B9901 /* FlipSideViewController.m in Sources */,
 				031ECCE0188DD24A0016398F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +506,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/hamid/Desktop/wifire-officail",
+					"/Users/hamid/Desktop/wifire-officail/wifire-officail/GoogleMaps-iOS-1.6.2",
+					"/Users/hamid/Desktop/wifire-officail/wifire-officail/GoogleMaps-iOS-1.6.2/GoogleMapsSDKDemos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wifire-officail/wifire-officail-Prefix.pch";
@@ -475,6 +526,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/hamid/Desktop/wifire-officail",
+					"/Users/hamid/Desktop/wifire-officail/wifire-officail/GoogleMaps-iOS-1.6.2",
+					"/Users/hamid/Desktop/wifire-officail/wifire-officail/GoogleMaps-iOS-1.6.2/GoogleMapsSDKDemos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wifire-officail/wifire-officail-Prefix.pch";

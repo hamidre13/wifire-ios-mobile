@@ -61,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="-1161" y="-382"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--View Controller - First responder-->
         <scene sceneID="9XI-4l-57C">
             <objects>
                 <viewController id="eS6-gN-PPK" sceneMemberID="viewController">
@@ -82,7 +82,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="wvi-zb-6Zr"/>
+                    <tabBarItem key="tabBarItem" title="First responder" id="wvi-zb-6Zr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gpw-Bp-S7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,7 +166,7 @@
             </objects>
             <point key="canvasLocation" x="-395" y="3212"/>
         </scene>
-        <!--Mapview - Item 2-->
+        <!--Mapview - Maps-->
         <scene sceneID="st2-6o-Gqc">
             <objects>
                 <viewController id="jUE-Kt-aid" customClass="mapview" sceneMemberID="viewController">
@@ -178,21 +178,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="358" translatesAutoresizingMaskIntoConstraints="NO" id="5Wq-KD-AFj">
-                                <rect key="frame" x="41" y="48" width="358" height="134"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtE-uQ-ZuV">
+                                <rect key="frame" x="670" y="20" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">This is a map view place holder and by tapping on the map your will get more info, we try to support Google maps, Ios native map and ucsd 3d maps</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Select map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="togglePopover:" destination="jUE-Kt-aid" eventType="touchUpInside" id="MNU-gz-CBp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="gmv-b3-McF"/>
+                    <tabBarItem key="tabBarItem" title="Maps" id="oTS-9c-KyS"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="DXm-ZO-uZf" kind="popover" id="UJs-RP-KRq">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTc-dt-bG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="-112"/>
+            <point key="canvasLocation" x="16" y="-109"/>
+        </scene>
+        <!--Flip Side View Controller-->
+        <scene sceneID="DII-ku-w1I">
+            <objects>
+                <viewController storyboardIdentifier="flipsideview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DXm-ZO-uZf" customClass="FlipSideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9dW-Kd-HfG"/>
+                        <viewControllerLayoutGuide type="bottom" id="bDq-SO-3nq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PT9-2E-h9x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxK-HC-64g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="-142"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
