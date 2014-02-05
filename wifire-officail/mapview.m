@@ -53,7 +53,8 @@
                                                             longitude:-117.241558
                                                                  zoom:12];
     mapView_ = [GMSMapView mapWithFrame:CGRectMake(30, 60, 600, 700) camera:camera];
-    mapView_.myLocationEnabled = NO;
+  
+    //mapView_.myLocationEnabled = NO;
     [self.view addSubview:mapView_];
     
     // Creates a marker in the center of the map.
@@ -90,6 +91,14 @@
             self.flipsidePopoverController = popoverController;
             popoverController.delegate = self;
         }
+    }
+}
+- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.flipsidePopoverController dismissPopoverAnimated:YES];
     }
 }
 
