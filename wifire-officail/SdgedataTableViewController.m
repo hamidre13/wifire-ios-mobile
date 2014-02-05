@@ -78,10 +78,9 @@
     NSData *data=[[NSData alloc]initWithContentsOfURL:url];
    
     //Setup stations array
-    NSMutableArray *wholedata = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-    //NSMutableDictionary *json = [NSJSONSerialization JSONObjectWithData:wholedata options:NSJSONReadingMutableContainers error:NULL];
-    NSLog(@"jason:%@",[[wholedata objectAtIndex:2] objectForKey:@"measurements"]  );
-    //[_jsondata addObject:[json valueForKey:@"measurements"]];
+    NSMutableDictionary *wholedata = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
+    NSLog(@"%@",[wholedata objectForKey:@"measurements"]);
+    [_jsondata addObject:[wholedata objectForKey:@"measurements"]];
     //NSData *mesurmentsdata = [[NSData alloc] initwithcon]
     _stations = [[NSMutableArray alloc]init];
     for (int i=0; i<_jsondata.count; i++) {
