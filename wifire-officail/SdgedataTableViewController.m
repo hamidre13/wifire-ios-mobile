@@ -31,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     //Set the title
     self.title = @"SDGE sensores informations";
     [self retirivedata];
@@ -65,7 +66,7 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    //Retrieve the current stations object for use with this cells
+    //Retrieve the ent stations object for use with this cells
     Sdgejasondata *currentdata = [_stations objectAtIndex:indexPath.row];
     cell.textLabel.text = currentdata.name;
     
@@ -78,23 +79,25 @@
     NSData *data=[[NSData alloc]initWithContentsOfURL:url];
    
     //Setup stations array
-    NSMutableDictionary *wholedata = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
-    NSLog(@"%@",[wholedata objectForKey:@"measurements"]);
-    [_jsondata addObject:[wholedata objectForKey:@"measurements"]];
-    //NSData *mesurmentsdata = [[NSData alloc] initwithcon]
+   _jsondata = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
+    NSLog(@"%@",[[[ _jsondata objectForKey:@"measurements"] objectAtIndex:0] objectForKey:@"abbr"]);
+   
+
+    
     _stations = [[NSMutableArray alloc]init];
-    for (int i=0; i<_jsondata.count; i++) {
-        NSString *abbr = [[_jsondata objectAtIndex:i ] objectForKey:@"abbr"];
-        NSString *dp = [[_jsondata objectAtIndex:i ] objectForKey:@"dp"];
-        NSString *lat = [[_jsondata objectAtIndex:i ] objectForKey:@"lat"];
-        NSString *lon = [[_jsondata objectAtIndex:i ] objectForKey:@"lon"];
-        NSString *name = [[_jsondata objectAtIndex:i ] objectForKey:@"name"];
-        NSString *owner = [[_jsondata objectAtIndex:i ] objectForKey:@"owner"];
-        NSString *rh = [[_jsondata objectAtIndex:i ] objectForKey:@"th"];
-        NSString *temp = [[_jsondata objectAtIndex:i ] objectForKey:@"temp"];
-        NSString *ts = [[_jsondata objectAtIndex:i ] objectForKey:@"ts"];
-        NSString *wd = [[_jsondata objectAtIndex:i ] objectForKey:@"wd"];
-        NSString *ws = [[_jsondata objectAtIndex:i ] objectForKey:@"ws"];
+    NSLog(@"%@" , _jsondata);
+    for (int i=0; i<[[ _jsondata objectForKey:@"measurements"] count]; i++) {
+        NSString *abbr   =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"abbr"];
+        NSString *dp     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"dp"];
+        NSString *lat    =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"lat"];
+        NSString *lon    =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"lon"];
+        NSString *name   =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"name"];
+        NSString *owner  =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"owner"];
+        NSString *rh     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"rh"];
+        NSString *temp   =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"temp"];
+        NSString *ts     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"ts"];
+        NSString *wd     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"wd"];
+        NSString *ws     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"ws"];
         
         
         Sdgejasondata *newData = [[Sdgejasondata alloc]initWithname:abbr andlat:lat andlon:lon andabbr:name  andowner:owner andrh:rh andtemp:temp andts:ts andwd:wd andws:ws anddp:dp];

@@ -11,7 +11,7 @@
 
 @interface SdgedataTableViewController : UITableViewController
 <UITableViewDataSource,UITableViewDelegate>
-@property (strong,nonatomic) NSMutableArray *jsondata;
+@property (strong,nonatomic) NSMutableDictionary *jsondata;
 @property (strong,nonatomic)NSMutableArray *stations;
 @property (strong, nonatomic) IBOutlet UITableView *sdgetablevieoutlet;
 

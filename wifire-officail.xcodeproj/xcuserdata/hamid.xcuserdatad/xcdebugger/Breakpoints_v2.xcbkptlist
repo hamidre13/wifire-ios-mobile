@@ -6,45 +6,61 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "wifire-officail/SdgedataTableViewController.m"
-            timestampString = "413337152.653477"
+            timestampString = "413420279.632043"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wifire-officail/SdgedataTableViewController.m"
+            timestampString = "413420279.632043"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "-retirivedata"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[SdgedataTableViewController retirivedata]"
                   moduleName = "wifire-officail"
                   urlString = "file:///Users/hamid/Desktop/wifire-officail/wifire-officail/SdgedataTableViewController.m"
-                  timestampString = "413337244.055198"
+                  timestampString = "413419730.520117"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "482">
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "560">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[SdgedataTableViewController retirivedata]"
                   moduleName = "wifire-officail"
                   urlString = "file:///Users/hamid/Desktop/wifire-officail/wifire-officail/SdgedataTableViewController.m"
-                  timestampString = "413337244.055383"
+                  timestampString = "413419730.52024"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "2367">
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "3094">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -52,15 +68,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
+            condition = "10"
             continueAfterRunningActions = "No"
             filePath = "wifire-officail/SdgedataTableViewController.m"
-            timestampString = "413337152.653477"
+            timestampString = "413420279.632043"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "-retirivedata"
             landmarkType = "5">
          </BreakpointContent>
