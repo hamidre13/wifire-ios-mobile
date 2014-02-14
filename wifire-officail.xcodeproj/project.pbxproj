@@ -43,6 +43,7 @@
 		03802671189089D6004B9901 /* FlipSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03802670189089D6004B9901 /* FlipSideViewController.m */; };
 		03A985C818A2CBEE00BB34E5 /* Sdgejasondata.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A985C718A2CBEE00BB34E5 /* Sdgejasondata.m */; };
 		03A985CB18A2E34E00BB34E5 /* SdgedataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A985CA18A2E34E00BB34E5 /* SdgedataTableViewController.m */; };
+		03BC9F3218A963FB00AD8D92 /* SensorInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BC9F3118A963FB00AD8D92 /* SensorInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		03A985C718A2CBEE00BB34E5 /* Sdgejasondata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sdgejasondata.m; sourceTree = "<group>"; };
 		03A985C918A2E34E00BB34E5 /* SdgedataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdgedataTableViewController.h; sourceTree = "<group>"; };
 		03A985CA18A2E34E00BB34E5 /* SdgedataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdgedataTableViewController.m; sourceTree = "<group>"; };
+		03BC9F3018A963FB00AD8D92 /* SensorInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorInfoViewController.h; sourceTree = "<group>"; };
+		03BC9F3118A963FB00AD8D92 /* SensorInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,8 @@
 				03A985C718A2CBEE00BB34E5 /* Sdgejasondata.m */,
 				03A985C918A2E34E00BB34E5 /* SdgedataTableViewController.h */,
 				03A985CA18A2E34E00BB34E5 /* SdgedataTableViewController.m */,
+				03BC9F3018A963FB00AD8D92 /* SensorInfoViewController.h */,
+				03BC9F3118A963FB00AD8D92 /* SensorInfoViewController.m */,
 			);
 			path = "wifire-officail";
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 			files = (
 				031ECCED188DD24A0016398F /* ViewController.m in Sources */,
 				031ECD27189046EE0016398F /* mapview.m in Sources */,
+				03BC9F3218A963FB00AD8D92 /* SensorInfoViewController.m in Sources */,
 				03A985C818A2CBEE00BB34E5 /* Sdgejasondata.m in Sources */,
 				031ECCE4188DD24A0016398F /* AppDelegate.m in Sources */,
 				03802671189089D6004B9901 /* FlipSideViewController.m in Sources */,

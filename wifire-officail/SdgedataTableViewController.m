@@ -7,6 +7,7 @@
 //
 
 #import "SdgedataTableViewController.h"
+#import "SensorInfoViewController.h"
 
 @interface SdgedataTableViewController ()
 
@@ -32,6 +33,7 @@
 {
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+   
     //Set the title
     self.title = @"SDGE sensores informations";
     [self retirivedata];
@@ -71,6 +73,12 @@
     cell.textLabel.text = currentdata.name;
     
     return cell;
+}
+-(void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [self performSegueWithIdentifier:@"Detailinfo" sender:self];
+    
 }
 
 -(void)retirivedata
@@ -145,16 +153,21 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
+    SensorInfoViewController *sencinfo = [segue destinationViewController];
     // Pass the selected object to the new view controller.
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    Sdgejasondata *singlestationinfo = [[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row];
+
+    [sencinfo setCurrentStation:singlestationinfo];
 }
 
- */
+ 
 
 @end
