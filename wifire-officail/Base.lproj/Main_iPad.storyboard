@@ -55,6 +55,7 @@
                         <segue destination="jUE-Kt-aid" kind="relationship" relationship="viewControllers" id="9IZ-4F-OL6"/>
                         <segue destination="eS6-gN-PPK" kind="relationship" relationship="viewControllers" id="aI1-0k-WBH"/>
                         <segue destination="8SJ-jl-caQ" kind="relationship" relationship="viewControllers" id="S8U-a8-3wx"/>
+                        <segue destination="gxE-Ht-qwc" kind="relationship" relationship="viewControllers" id="yyg-ey-dKV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXv-hf-0Uc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,6 +157,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxK-HC-64g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="882" y="-142"/>
+        </scene>
+        <!--View Controller - Alert-->
+        <scene sceneID="Vwz-av-iGS">
+            <objects>
+                <viewController id="gxE-Ht-qwc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zhA-o6-Pfo"/>
+                        <viewControllerLayoutGuide type="bottom" id="NMV-m1-64H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lIM-s5-lvv">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Alert" id="yfZ-NJ-dVm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flF-7P-E8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="-108"/>
         </scene>
         <!--Sdgedata Table View Controller-->
         <scene sceneID="dbe-ET-JtV">

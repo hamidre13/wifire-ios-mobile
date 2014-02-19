@@ -162,9 +162,22 @@
     // Get the new view controller using [segue destinationViewController].
     SensorInfoViewController *sencinfo = [segue destinationViewController];
     // Pass the selected object to the new view controller.
+    //NSIndexPath *path = [self.tableView indexPathForCell:sender];
     NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-    Sdgejasondata *singlestationinfo = [[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row];
-
+    NSLog(@"path is %@",path.row);
+    NSString *abbr   =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"abbr"];
+    NSString *dp     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"dp"];
+    NSString *lat    =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"lat"];
+    NSString *lon    =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"lon"];
+    NSString *name   =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"name"];
+    NSString *owner  =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"owner"];
+    NSString *rh     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"rh"];
+    NSString *temp   =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"temp"];
+    NSString *ts     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"ts"];
+    NSString *wd     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"wd"];
+    NSString *ws     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"ws"];
+    Sdgejasondata *singlestationinfo = [[Sdgejasondata alloc]initWithname:abbr andlat:lat andlon:lon andabbr:name  andowner:owner andrh:rh andtemp:temp andts:ts andwd:wd andws:ws anddp:dp];
+    
     [sencinfo setCurrentStation:singlestationinfo];
 }
 
