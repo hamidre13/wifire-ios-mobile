@@ -12,8 +12,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
     // Override point for customization after application launch.
     return YES;
+}
+-(void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    //Call the part that fetches data
+    
+    //Let Ios know that I am done(call the completion handler)
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

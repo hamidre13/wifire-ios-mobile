@@ -8,7 +8,7 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import "mapview.h"
 #import <MapKit/MapKit.h>
-
+#define getdataurl @"http://wifire.ucsd.edu:12020/"
 @interface mapview ()
 @property NSArray *maptypes;
 @end
@@ -54,16 +54,36 @@
                                                                  zoom:12];
     mapView_ = [GMSMapView mapWithFrame:CGRectMake(30, 60, 600, 700) camera:camera];
   
-    //mapView_.myLocationEnabled = NO;
+    mapView_.myLocationEnabled = YES;
     [self.view addSubview:mapView_];
     
+    
+    [self retirivedata];
+    
+    for (Sdgejasondata *sensor in _stations) {
+        // Creates a marker in the center of the map.
+            GMSMarker *marker = [[GMSMarker alloc] init];
+        marker.position = CLLocationCoordinate2DMake([sensor.lat doubleValue],[sensor.lon doubleValue]);
+            marker.title = sensor.name;
+            marker.snippet = [NSString stringWithFormat:@"Sensore abbr: %@ \n Sensore awd: %@",sensor.abbr,sensor.wd];
+        
+            marker.map = mapView_;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     // Creates a marker in the center of the map.
-    GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(32.878938, -117.241558);
-    marker.title = @"UCSD";
-    marker.snippet = @"San diego";
-
-    marker.map = mapView_;
+//    GMSMarker *marker = [[GMSMarker alloc] init];
+//    marker.position = CLLocationCoordinate2DMake(32.878938, -117.241558);
+//    marker.title = @"UCSD";
+//    marker.snippet = @"San diego";
+//
+//    marker.map = mapView_;
    
     
 //    MKMapView *mapview = [[MKMapView alloc] initWithFrame:CGRectMake(300, 100, 200, 200)];
@@ -111,5 +131,40 @@
         [self performSegueWithIdentifier:@"showAlternate" sender:sender];
     }
 }
+
+
+-(void)retirivedata
+{
+    NSURL *url=[[NSURL alloc]initWithString:getdataurl];
+    NSData *data=[[NSData alloc]initWithContentsOfURL:url];
+    
+    //Setup stations array
+    _jsondata = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:NULL];
+    NSLog(@"%@",[[[ _jsondata objectForKey:@"measurements"] objectAtIndex:0] objectForKey:@"abbr"]);
+    
+    
+    
+    _stations = [[NSMutableArray alloc]init];
+    NSLog(@"%@" , _jsondata);
+    for (int i=0; i<[[ _jsondata objectForKey:@"measurements"] count]; i++) {
+        NSString *abbr   =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"abbr"];
+        NSString *dp     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"dp"];
+        NSString *lat    =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"lat"];
+        NSString *lon    =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"lon"];
+        NSString *name   =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"name"];
+        NSString *owner  =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"owner"];
+        NSString *rh     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"rh"];
+        NSString *temp   =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"temp"];
+        NSString *ts     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"ts"];
+        NSString *wd     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"wd"];
+        NSString *ws     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:i] objectForKey:@"ws"];
+        
+        
+        Sdgejasondata *newData = [[Sdgejasondata alloc]initWithname:abbr andlat:lat andlon:lon andabbr:name  andowner:owner andrh:rh andtemp:temp andts:ts andwd:wd andws:ws anddp:dp];
+        [_stations addObject:newData];
+        
+    }
+}
+
 
 @end

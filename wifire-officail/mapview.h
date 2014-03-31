@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "FlipSideViewController.h"
+#import "Sdgejasondata.h"
 
 @interface mapview : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate,UIPopoverControllerDelegate,FlipsideViewControllerDelegate>
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
+@property (strong,nonatomic) NSMutableDictionary *jsondata;
+@property (strong,nonatomic)NSMutableArray *stations;
 @end

@@ -291,6 +291,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Hamid tavakoli";
 				TargetAttributes = {
+					031ECCCF188DD24A0016398F = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					031ECCF3188DD24A0016398F = {
 						TestTargetID = 031ECCCF188DD24A0016398F;
 					};

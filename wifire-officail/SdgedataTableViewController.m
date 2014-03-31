@@ -1,4 +1,3 @@
-//
 //  SdgedataTableViewController.m
 //  wifire-officail
 //
@@ -8,6 +7,7 @@
 
 #import "SdgedataTableViewController.h"
 #import "SensorInfoViewController.h"
+
 
 @interface SdgedataTableViewController ()
 
@@ -66,17 +66,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+    UITableViewCell *Cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NSLog(@"this index path is :%@",indexPath);
     //Retrieve the ent stations object for use with this cells
     Sdgejasondata *currentdata = [_stations objectAtIndex:indexPath.row];
-    cell.textLabel.text = currentdata.name;
+    Cell.textLabel.text = currentdata.name;
     
-    return cell;
+    return Cell;
 }
--(void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    //UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     [self performSegueWithIdentifier:@"Detailinfo" sender:self];
     
 }
@@ -164,7 +164,7 @@
     // Pass the selected object to the new view controller.
     //NSIndexPath *path = [self.tableView indexPathForCell:sender];
     NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-    NSLog(@"path is %@",path.row);
+    NSLog(@"path is %@",[self.tableView indexPathForCell:sender]);
     NSString *abbr   =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"abbr"];
     NSString *dp     =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"dp"];
     NSString *lat    =  [[[ _jsondata objectForKey:@"measurements"] objectAtIndex:path.row] objectForKey:@"lat"];
