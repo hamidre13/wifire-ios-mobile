@@ -41,6 +41,7 @@
 		031ECE36189052C30016398F /* GoogleMaps.framework in Resources */ = {isa = PBXBuildFile; fileRef = 031ECE32189052070016398F /* GoogleMaps.framework */; };
 		031ECE381890534E0016398F /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 031ECE371890534E0016398F /* GoogleMaps.bundle */; };
 		03802671189089D6004B9901 /* FlipSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03802670189089D6004B9901 /* FlipSideViewController.m */; };
+		039CC00D18EF323300EFA460 /* whetherAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 039CC00C18EF323300EFA460 /* whetherAlert.m */; };
 		03A985C818A2CBEE00BB34E5 /* Sdgejasondata.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A985C718A2CBEE00BB34E5 /* Sdgejasondata.m */; };
 		03A985CB18A2E34E00BB34E5 /* SdgedataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A985CA18A2E34E00BB34E5 /* SdgedataTableViewController.m */; };
 		03BC9F3218A963FB00AD8D92 /* SensorInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BC9F3118A963FB00AD8D92 /* SensorInfoViewController.m */; };
@@ -97,6 +98,8 @@
 		031ECE371890534E0016398F /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		0380266F189089D6004B9901 /* FlipSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipSideViewController.h; sourceTree = "<group>"; };
 		03802670189089D6004B9901 /* FlipSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipSideViewController.m; sourceTree = "<group>"; };
+		039CC00B18EF323300EFA460 /* whetherAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whetherAlert.h; sourceTree = "<group>"; };
+		039CC00C18EF323300EFA460 /* whetherAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = whetherAlert.m; sourceTree = "<group>"; };
 		03A985C618A2CBEE00BB34E5 /* Sdgejasondata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sdgejasondata.h; sourceTree = "<group>"; };
 		03A985C718A2CBEE00BB34E5 /* Sdgejasondata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sdgejasondata.m; sourceTree = "<group>"; };
 		03A985C918A2E34E00BB34E5 /* SdgedataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdgedataTableViewController.h; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 				03A985CA18A2E34E00BB34E5 /* SdgedataTableViewController.m */,
 				03BC9F3018A963FB00AD8D92 /* SensorInfoViewController.h */,
 				03BC9F3118A963FB00AD8D92 /* SensorInfoViewController.m */,
+				039CC00B18EF323300EFA460 /* whetherAlert.h */,
+				039CC00C18EF323300EFA460 /* whetherAlert.m */,
 			);
 			path = "wifire-officail";
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 				031ECD27189046EE0016398F /* mapview.m in Sources */,
 				03BC9F3218A963FB00AD8D92 /* SensorInfoViewController.m in Sources */,
 				03A985C818A2CBEE00BB34E5 /* Sdgejasondata.m in Sources */,
+				039CC00D18EF323300EFA460 /* whetherAlert.m in Sources */,
 				031ECCE4188DD24A0016398F /* AppDelegate.m in Sources */,
 				03802671189089D6004B9901 /* FlipSideViewController.m in Sources */,
 				03A985CB18A2E34E00BB34E5 /* SdgedataTableViewController.m in Sources */,

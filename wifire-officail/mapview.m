@@ -44,6 +44,8 @@
 - (void)viewDidLoad
 {
      [super viewDidLoad];
+    [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
     self.maptypes = @[@"ios native maps",@"Google maps"];
     // Do any additional setup after loading the view.
     [GMSServices provideAPIKey:@"AIzaSyCJZfRf-vkAS4mT_ZsGa7ySzAPRLNgQlu0"];
@@ -52,7 +54,7 @@
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:32.878938
                                                             longitude:-117.241558
                                                                  zoom:12];
-    mapView_ = [GMSMapView mapWithFrame:CGRectMake(30, 60, 600, 700) camera:camera];
+    mapView_ = [GMSMapView mapWithFrame:self.view.bounds camera:camera];
   
     mapView_.myLocationEnabled = YES;
     [self.view addSubview:mapView_];

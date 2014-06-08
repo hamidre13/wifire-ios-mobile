@@ -14,4 +14,6 @@
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 @property (strong,nonatomic) NSMutableDictionary *jsondata;
 @property (strong,nonatomic)NSMutableArray *stations;
+@property (weak, nonatomic) IBOutlet UIView *googlemapview;
+@property (strong,nonatomic) IBOutlet UIViewController* gmap;
 @end

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="b6u-0c-wSZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="b6u-0c-wSZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--View Controller - Item 1-->
@@ -101,7 +101,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtE-uQ-ZuV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtE-uQ-ZuV">
                                 <rect key="frame" x="670" y="20" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select map">
@@ -111,8 +111,28 @@
                                     <action selector="togglePopover:" destination="jUE-Kt-aid" eventType="touchUpInside" id="MNU-gz-CBp"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dat-3I-OcI">
+                                <rect key="frame" x="0.0" y="79" width="728" height="903"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5YD-IP-TQX">
+                                        <rect key="frame" x="0.0" y="0.0" width="728" height="903"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dat-3I-OcI" firstAttribute="trailing" secondItem="HtE-uQ-ZuV" secondAttribute="trailing" id="1Ap-7E-x5v"/>
+                            <constraint firstItem="dat-3I-OcI" firstAttribute="top" secondItem="rFm-8u-ceY" secondAttribute="top" constant="53" id="4nI-US-6hp"/>
+                            <constraint firstItem="dat-3I-OcI" firstAttribute="top" secondItem="HtE-uQ-ZuV" secondAttribute="bottom" constant="3" id="6RM-dj-xln"/>
+                            <constraint firstItem="dat-3I-OcI" firstAttribute="leading" secondItem="rFm-8u-ceY" secondAttribute="leading" constant="20" symbolic="YES" id="aJC-rU-Atb"/>
+                            <constraint firstItem="0Uv-Q1-c7F" firstAttribute="top" secondItem="dat-3I-OcI" secondAttribute="bottom" constant="19" id="dWj-ce-Gd3"/>
+                            <constraint firstAttribute="trailing" secondItem="dat-3I-OcI" secondAttribute="trailing" constant="20" symbolic="YES" id="fBx-c8-mnV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Maps" id="oTS-9c-KyS"/>
                     <toolbarItems/>
@@ -125,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTc-dt-bG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16" y="-109"/>
+            <point key="canvasLocation" x="15" y="-93"/>
         </scene>
         <!--Flipside View Controller-->
         <scene sceneID="DII-ku-w1I">
